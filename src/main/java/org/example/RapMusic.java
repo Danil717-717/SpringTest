@@ -1,2 +1,8 @@
-package org.example;public class RapMusic {
+package org.example;
+
+public class RapMusic implements Music{
+    @Override
+    public String getSong() {
+        return "Eminem";
+    }
 }
