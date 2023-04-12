@@ -1,11 +1,12 @@
-package org.example;
+package org_example;
 
 import org.springframework.stereotype.Component;
 
 @Component
-public class RockMusic implements Music{
+public class ClassicalMusic implements Music{
+
     @Override
     public String getSong() {
-        return "Wind cries Mary";
+        return "Hungarian Rhapsody";
     }
 }

@@ -1,4 +1,4 @@
-package org.example;
+package org_example;
 
 public class RapMusic implements Music{
     @Override

@@ -7,46 +7,7 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:property-placeholder location="classpath:musicPlayer.properties"/>
-    <!--эта строка для настройки с файла .xml-->
 
-    <!--<context:component-scan base-package="org.example"/>-->
-    <!-- теперь с анотациями будет всего одна строчка
-    она включает сканирование компонентов-->
+    <context:component-scan base-package= "org_example" />
 
-    <bean id="musicBean"
-          class="org.example.ClassicalMusic"
-          init-method="doMyInit"
-          destroy-method="doMyDestroy"
-          factory-method="getClassicalMusic">
-    </bean>
-
-    <!--<bean id="musicBean"
-          class="org.example.ClassicalMusic"
-          init-method="doMyInit"
-          destroy-method="doMyDestroy"
-          factory-method="getClassicalMusic">
-    </bean>
-
-    <bean id="musicBean2"
-          class="org.example.RockMusic">
-    </bean>
-
-    <bean id="musicBean3"
-          class="org.example.RapMusic">
-    </bean>
-
-    <bean id="musicPlayer"
-        class="org.example.MusicPlayer">
-        <property name="musicList" >
-                <list>
-                    <ref bean="musicBean1"/>
-                    <ref bean="musicBean2"/>
-                    <ref bean="musicBean3"/>
-                </list>
-        </property>
-
-        <property name="name" value="${musicPlayer.name}"/>
-        <property name="volume" value="${musicPlayer.volume}"/>
-    </bean>-->
 </beans>
